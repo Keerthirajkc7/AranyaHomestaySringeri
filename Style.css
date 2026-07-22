@@ -468,3 +468,64 @@ Hero
 .contact{
     padding:100px 0;
     background:#eef5ec
+
+       
+/* Mobile Menu */
+
+.nav-links.active{
+display:flex;
+flex-direction:column;
+position:absolute;
+top:75px;
+left:0;
+width:100%;
+background:#173b25;
+padding:25px 0;
+text-align:center;
+}
+
+/* Lightbox */
+
+#lightbox{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.92);
+justify-content:center;
+align-items:center;
+z-index:99999;
+}
+
+#lightbox img{
+max-width:90%;
+max-height:85%;
+border-radius:12px;
+}
+
+#close-lightbox{
+position:absolute;
+top:30px;
+right:40px;
+font-size:50px;
+color:white;
+cursor:pointer;
+}
+
+/* Scroll Animation */
+
+.room-card,
+.amenity,
+.contact-card,
+.gallery-grid img{
+opacity:0;
+transform:translateY(40px);
+transition:.8s;
+}
+
+.show{
+opacity:1!important;
+transform:translateY(0)!important;
+}
